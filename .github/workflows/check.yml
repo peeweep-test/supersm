@@ -9,7 +9,7 @@ jobs:
     if: >
       github.event.action != 'closed' || (
         github.event.action == 'closed' &&
-        github.event.pull_request.merged == 'true'
+        github.event.pull_request.merged == true
       )
     uses: peeweep-test/.github/.github/workflows/jenkine-bridge.yml@main
     secrets:

@@ -1,6 +1,7 @@
 name: jenkine bridge
 on:
-   pull_request_target:
+#    pull_request_target:
+   pull_request:
 
 jobs:
   build:

@@ -27,13 +27,7 @@ jobs:
       - name: Trigger build
         id: generate-runid
         run: |
-          # put RUN_ID to output
           echo "::set-output name=RUN_ID::$(jenkins-bridge-client -token $BRIDGE_TOKEN -triggerBuild)"
-
-      - uses: webiny/action-post-run@2.0.1
-        id: post-run-command
-        with:
-          run: jenkins-bridge-client -token "$BRIDGE_TOKEN" -runid "${{ steps.generate-runid.outputs.RUN_ID }}" -cancelBuild
 
       - name: Print log
         run: |
@@ -49,3 +43,7 @@ jobs:
           path: ./artifacts/*.deb
           single-archive: "false"
 
+      - name: post runs
+        if: always()
+        run: |
+          jenkins-bridge-client -token "$BRIDGE_TOKEN" -runid "${{ steps.generate-runid.outputs.RUN_ID }}" -cancelBuild

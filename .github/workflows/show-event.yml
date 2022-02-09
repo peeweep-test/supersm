@@ -4,8 +4,8 @@ on:
   push:
 
 jobs:
-  log-github-event-goodies:
-    name: "LOG Everything on GitHub Event"
+  log-github:
+    # name: "LOG Everything on GitHub Event"
     runs-on: ubuntu-latest
     steps:
       - name: Logging github.event

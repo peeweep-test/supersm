@@ -1,13 +1,13 @@
 {
-  "token": "***",
+  "token": "ghs_5h0b1nrdtMcCkyHFc9u6pRSm1jfjGS4YlU1Q",
   "job": "log-github",
-  "ref": "refs/pull/17/merge",
-  "sha": "efd2c81631a91cb2277e183545910106f3767a85",
+  "ref": "refs/pull/18/merge",
+  "sha": "e3bc361d81c49ecc1700ad18bad45b7b804d5338",
   "repository": "peeweep-test/supersm",
   "repository_owner": "peeweep-test",
   "repositoryUrl": "git://github.com/peeweep-test/supersm.git",
-  "run_id": "1817189715",
-  "run_number": "11",
+  "run_id": "1817333673",
+  "run_number": "20",
   "retention_days": "90",
   "run_attempt": "1",
   "actor": "peeweep",
@@ -16,10 +16,8 @@
   "base_ref": "master",
   "event_name": "pull_request",
   "event": {
-    "action": "synchronize",
-    "after": "306aadeb58a4679454a922318da7e6556bebe3ce",
-    "before": "934ab8e967a762ac4def9c2411630f45370acb28",
-    "number": 17,
+    "action": "opened",
+    "number": 18,
     "organization": {
       "avatar_url": "https://avatars.githubusercontent.com/u/97649938?v=4",
       "description": null,
@@ -37,32 +35,32 @@
     "pull_request": {
       "_links": {
         "comments": {
-          "href": "https://api.github.com/repos/peeweep-test/supersm/issues/17/comments"
+          "href": "https://api.github.com/repos/peeweep-test/supersm/issues/18/comments"
         },
         "commits": {
-          "href": "https://api.github.com/repos/peeweep-test/supersm/pulls/17/commits"
+          "href": "https://api.github.com/repos/peeweep-test/supersm/pulls/18/commits"
         },
         "html": {
-          "href": "https://github.com/peeweep-test/supersm/pull/17"
+          "href": "https://github.com/peeweep-test/supersm/pull/18"
         },
         "issue": {
-          "href": "https://api.github.com/repos/peeweep-test/supersm/issues/17"
+          "href": "https://api.github.com/repos/peeweep-test/supersm/issues/18"
         },
         "review_comment": {
           "href": "https://api.github.com/repos/peeweep-test/supersm/pulls/comments{/number}"
         },
         "review_comments": {
-          "href": "https://api.github.com/repos/peeweep-test/supersm/pulls/17/comments"
+          "href": "https://api.github.com/repos/peeweep-test/supersm/pulls/18/comments"
         },
         "self": {
-          "href": "https://api.github.com/repos/peeweep-test/supersm/pulls/17"
+          "href": "https://api.github.com/repos/peeweep-test/supersm/pulls/18"
         },
         "statuses": {
-          "href": "https://api.github.com/repos/peeweep-test/supersm/statuses/306aadeb58a4679454a922318da7e6556bebe3ce"
+          "href": "https://api.github.com/repos/peeweep-test/supersm/statuses/9c07c8d7d73b829bced37f15e9ff45fe93d41f60"
         }
       },
       "active_lock_reason": null,
-      "additions": 22,
+      "additions": 379,
       "assignee": null,
       "assignees": [],
       "author_association": "CONTRIBUTOR",
@@ -73,8 +71,8 @@
         "repo": {
           "allow_auto_merge": false,
           "allow_forking": true,
-          "allow_merge_commit": true,
-          "allow_rebase_merge": true,
+          "allow_merge_commit": false,
+          "allow_rebase_merge": false,
           "allow_squash_merge": true,
           "allow_update_branch": false,
           "archive_url": "https://api.github.com/repos/peeweep-test/supersm/{archive_format}{/ref}",
@@ -160,9 +158,9 @@
           },
           "private": false,
           "pulls_url": "https://api.github.com/repos/peeweep-test/supersm/pulls{/number}",
-          "pushed_at": "2022-02-09T09:24:56Z",
+          "pushed_at": "2022-02-09T09:56:47Z",
           "releases_url": "https://api.github.com/repos/peeweep-test/supersm/releases{/id}",
-          "size": 63,
+          "size": 73,
           "ssh_url": "git@github.com:peeweep-test/supersm.git",
           "stargazers_count": 0,
           "stargazers_url": "https://api.github.com/repos/peeweep-test/supersm/stargazers",
@@ -180,7 +178,7 @@
           "watchers": 0,
           "watchers_count": 0
         },
-        "sha": "16e9854d75af97a24db3b9e34b9f4c87ae1ddc32",
+        "sha": "9a5cafca73a508110fe7ad24541050edfbc84be2",
         "user": {
           "avatar_url": "https://avatars.githubusercontent.com/u/97649938?v=4",
           "events_url": "https://api.github.com/users/peeweep-test/events{/privacy}",
@@ -203,15 +201,15 @@
         }
       },
       "body": null,
-      "changed_files": 3,
+      "changed_files": 2,
       "closed_at": null,
       "comments": 0,
-      "comments_url": "https://api.github.com/repos/peeweep-test/supersm/issues/17/comments",
-      "commits": 6,
-      "commits_url": "https://api.github.com/repos/peeweep-test/supersm/pulls/17/commits",
-      "created_at": "2022-02-09T09:00:11Z",
-      "deletions": 68,
-      "diff_url": "https://github.com/peeweep-test/supersm/pull/17.diff",
+      "comments_url": "https://api.github.com/repos/peeweep-test/supersm/issues/18/comments",
+      "commits": 2,
+      "commits_url": "https://api.github.com/repos/peeweep-test/supersm/pulls/18/commits",
+      "created_at": "2022-02-09T09:56:46Z",
+      "deletions": 5,
+      "diff_url": "https://github.com/peeweep-test/supersm/pull/18.diff",
       "draft": false,
       "head": {
         "label": "peeweep-test:show-event",
@@ -219,8 +217,8 @@
         "repo": {
           "allow_auto_merge": false,
           "allow_forking": true,
-          "allow_merge_commit": true,
-          "allow_rebase_merge": true,
+          "allow_merge_commit": false,
+          "allow_rebase_merge": false,
           "allow_squash_merge": true,
           "allow_update_branch": false,
           "archive_url": "https://api.github.com/repos/peeweep-test/supersm/{archive_format}{/ref}",
@@ -306,9 +304,9 @@
           },
           "private": false,
           "pulls_url": "https://api.github.com/repos/peeweep-test/supersm/pulls{/number}",
-          "pushed_at": "2022-02-09T09:24:56Z",
+          "pushed_at": "2022-02-09T09:56:47Z",
           "releases_url": "https://api.github.com/repos/peeweep-test/supersm/releases{/id}",
-          "size": 63,
+          "size": 73,
           "ssh_url": "git@github.com:peeweep-test/supersm.git",
           "stargazers_count": 0,
           "stargazers_url": "https://api.github.com/repos/peeweep-test/supersm/stargazers",
@@ -326,7 +324,7 @@
           "watchers": 0,
           "watchers_count": 0
         },
-        "sha": "306aadeb58a4679454a922318da7e6556bebe3ce",
+        "sha": "9c07c8d7d73b829bced37f15e9ff45fe93d41f60",
         "user": {
           "avatar_url": "https://avatars.githubusercontent.com/u/97649938?v=4",
           "events_url": "https://api.github.com/users/peeweep-test/events{/privacy}",
@@ -348,33 +346,33 @@
           "url": "https://api.github.com/users/peeweep-test"
         }
       },
-      "html_url": "https://github.com/peeweep-test/supersm/pull/17",
-      "id": 843649979,
-      "issue_url": "https://api.github.com/repos/peeweep-test/supersm/issues/17",
+      "html_url": "https://github.com/peeweep-test/supersm/pull/18",
+      "id": 843704430,
+      "issue_url": "https://api.github.com/repos/peeweep-test/supersm/issues/18",
       "labels": [],
       "locked": false,
       "maintainer_can_modify": false,
-      "merge_commit_sha": "d51fc6602c78b2911dd7a2e3eaa75f11f32ba69b",
+      "merge_commit_sha": null,
       "mergeable": null,
       "mergeable_state": "unknown",
       "merged": false,
       "merged_at": null,
       "merged_by": null,
       "milestone": null,
-      "node_id": "PR_kwDOGqwiZ84ySRO7",
-      "number": 17,
-      "patch_url": "https://github.com/peeweep-test/supersm/pull/17.patch",
+      "node_id": "PR_kwDOGqwiZ84ySehu",
+      "number": 18,
+      "patch_url": "https://github.com/peeweep-test/supersm/pull/18.patch",
       "rebaseable": null,
       "requested_reviewers": [],
       "requested_teams": [],
       "review_comment_url": "https://api.github.com/repos/peeweep-test/supersm/pulls/comments{/number}",
       "review_comments": 0,
-      "review_comments_url": "https://api.github.com/repos/peeweep-test/supersm/pulls/17/comments",
+      "review_comments_url": "https://api.github.com/repos/peeweep-test/supersm/pulls/18/comments",
       "state": "open",
-      "statuses_url": "https://api.github.com/repos/peeweep-test/supersm/statuses/306aadeb58a4679454a922318da7e6556bebe3ce",
+      "statuses_url": "https://api.github.com/repos/peeweep-test/supersm/statuses/9c07c8d7d73b829bced37f15e9ff45fe93d41f60",
       "title": "Show event",
-      "updated_at": "2022-02-09T09:24:57Z",
-      "url": "https://api.github.com/repos/peeweep-test/supersm/pulls/17",
+      "updated_at": "2022-02-09T09:56:46Z",
+      "url": "https://api.github.com/repos/peeweep-test/supersm/pulls/18",
       "user": {
         "avatar_url": "https://avatars.githubusercontent.com/u/624223?v=4",
         "events_url": "https://api.github.com/users/peeweep/events{/privacy}",
@@ -480,9 +478,9 @@
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/peeweep-test/supersm/pulls{/number}",
-      "pushed_at": "2022-02-09T09:24:56Z",
+      "pushed_at": "2022-02-09T09:56:47Z",
       "releases_url": "https://api.github.com/repos/peeweep-test/supersm/releases{/id}",
-      "size": 63,
+      "size": 73,
       "ssh_url": "git@github.com:peeweep-test/supersm.git",
       "stargazers_count": 0,
       "stargazers_url": "https://api.github.com/repos/peeweep-test/supersm/stargazers",
@@ -524,15 +522,15 @@
   "server_url": "https://github.com",
   "api_url": "https://api.github.com",
   "graphql_url": "https://api.github.com/graphql",
-  "ref_name": "17/merge",
+  "ref_name": "18/merge",
   "ref_protected": false,
   "ref_type": "branch",
   "secret_source": "Actions",
   "workspace": "/home/runner/work/supersm/supersm",
-  "action": "__run_3",
+  "action": "__run_2",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "",
   "action_ref": "",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_468f2b17-ce7c-44a5-a16b-fa8d8c2c70c6",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_468f2b17-ce7c-44a5-a16b-fa8d8c2c70c6"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_fe1f19c1-3b8d-4f1a-8f89-6cdff6612241",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_fe1f19c1-3b8d-4f1a-8f89-6cdff6612241"
 }

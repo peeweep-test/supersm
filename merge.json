@@ -1,13 +1,13 @@
 {
-  "token": "***",
+  "token": "ghs_tZjfkenT01EPdj9xAQ2MPS7LQTJ3Uq1V04BA",
   "job": "log-github",
   "ref": "refs/heads/master",
-  "sha": "9a5cafca73a508110fe7ad24541050edfbc84be2",
+  "sha": "9e44d2d0ac1d3b495aeb3332f5de5a3ad2fb58ff",
   "repository": "peeweep-test/supersm",
   "repository_owner": "peeweep-test",
   "repositoryUrl": "git://github.com/peeweep-test/supersm.git",
-  "run_id": "1817218085",
-  "run_number": "16",
+  "run_id": "1817336220",
+  "run_number": "21",
   "retention_days": "90",
   "run_attempt": "1",
   "actor": "peeweep",
@@ -16,9 +16,9 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "9a5cafca73a508110fe7ad24541050edfbc84be2",
+    "after": "9e44d2d0ac1d3b495aeb3332f5de5a3ad2fb58ff",
     "base_ref": null,
-    "before": "16e9854d75af97a24db3b9e34b9f4c87ae1ddc32",
+    "before": "9a5cafca73a508110fe7ad24541050edfbc84be2",
     "commits": [
       {
         "author": {
@@ -27,163 +27,19 @@
           "username": "peeweep"
         },
         "committer": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
+          "email": "noreply@github.com",
+          "name": "GitHub",
+          "username": "web-flow"
         },
         "distinct": true,
-        "id": "401eb46c924358e8c525ba118585705aaa6222e1",
-        "message": "add show-event action",
-        "timestamp": "2022-02-09T17:31:09+08:00",
-        "tree_id": "9bbe5ff2430d76ed0420235b8a3f51349ada628c",
-        "url": "https://github.com/peeweep-test/supersm/commit/401eb46c924358e8c525ba118585705aaa6222e1"
-      },
-      {
-        "author": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "committer": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "distinct": true,
-        "id": "1e25a858748855ecc01531e83ac2ee125625e8bf",
-        "message": "fix typo",
-        "timestamp": "2022-02-09T17:31:09+08:00",
-        "tree_id": "b0af2f8f1ee7ccbc355267d74efa94890ee89b14",
-        "url": "https://github.com/peeweep-test/supersm/commit/1e25a858748855ecc01531e83ac2ee125625e8bf"
-      },
-      {
-        "author": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "committer": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "distinct": true,
-        "id": "69984e3d4c71ecf368dc8673820bcc91388fb2c3",
-        "message": "add  pr base sha",
-        "timestamp": "2022-02-09T17:31:09+08:00",
-        "tree_id": "3d6264ae8cfb63a2956b6a6b8e4e99c99997819c",
-        "url": "https://github.com/peeweep-test/supersm/commit/69984e3d4c71ecf368dc8673820bcc91388fb2c3"
-      },
-      {
-        "author": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "committer": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "distinct": true,
-        "id": "28e3ce519d43411a3df395a160f8861258b36464",
-        "message": "only pr show pr base sha",
-        "timestamp": "2022-02-09T17:31:09+08:00",
-        "tree_id": "4ae39dd639e76bdde10f8ac288c93c51bf4b5cfd",
-        "url": "https://github.com/peeweep-test/supersm/commit/28e3ce519d43411a3df395a160f8861258b36464"
-      },
-      {
-        "author": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "committer": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "distinct": true,
-        "id": "16d39b697146b1e47a077755dcf2921903f3e696",
-        "message": "logging github",
-        "timestamp": "2022-02-09T17:31:09+08:00",
-        "tree_id": "a096b04aad3d92191eb1082dec0d2f619e441276",
-        "url": "https://github.com/peeweep-test/supersm/commit/16d39b697146b1e47a077755dcf2921903f3e696"
-      },
-      {
-        "author": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "committer": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "distinct": true,
-        "id": "ada42131be322b960f721cff83db61a62cd0651a",
-        "message": "update job name",
-        "timestamp": "2022-02-09T17:31:09+08:00",
-        "tree_id": "e3a5eaf9f011b2873f301efb0e0395f973070eb9",
-        "url": "https://github.com/peeweep-test/supersm/commit/ada42131be322b960f721cff83db61a62cd0651a"
-      },
-      {
-        "author": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "committer": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "distinct": true,
-        "id": "2072c086a2f3983a7ec40e59488289f3d8bb5668",
-        "message": "remove github.event",
-        "timestamp": "2022-02-09T17:31:09+08:00",
-        "tree_id": "8ed576f15b596c38e951d6242686cc144ff25d61",
-        "url": "https://github.com/peeweep-test/supersm/commit/2072c086a2f3983a7ec40e59488289f3d8bb5668"
-      },
-      {
-        "author": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "committer": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "distinct": true,
-        "id": "b03584d53f68e512a99b5185a338371fd2f12cb3",
-        "message": "add pr.json, push.json",
-        "timestamp": "2022-02-09T17:31:09+08:00",
-        "tree_id": "09fd706a0d3e8a4778b4e7d9b1d594ebdbcbb9f6",
-        "url": "https://github.com/peeweep-test/supersm/commit/b03584d53f68e512a99b5185a338371fd2f12cb3"
-      },
-      {
-        "author": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "committer": {
-          "email": "peeweep@0x0.ee",
-          "name": "peeweep",
-          "username": "peeweep"
-        },
-        "distinct": true,
-        "id": "9a5cafca73a508110fe7ad24541050edfbc84be2",
-        "message": "fix typo",
-        "timestamp": "2022-02-09T17:31:09+08:00",
-        "tree_id": "c0a80280087938b53da25caebe27abe4c31f8b4c",
-        "url": "https://github.com/peeweep-test/supersm/commit/9a5cafca73a508110fe7ad24541050edfbc84be2"
+        "id": "9e44d2d0ac1d3b495aeb3332f5de5a3ad2fb58ff",
+        "message": "Show event (#18)\n\n* upload\r\n\r\n* comment install depends",
+        "timestamp": "2022-02-09T17:57:27+08:00",
+        "tree_id": "5fef4221d04568a21327463f5816ea7b1d76558c",
+        "url": "https://github.com/peeweep-test/supersm/commit/9e44d2d0ac1d3b495aeb3332f5de5a3ad2fb58ff"
       }
     ],
-    "compare": "https://github.com/peeweep-test/supersm/compare/16e9854d75af...9a5cafca73a5",
+    "compare": "https://github.com/peeweep-test/supersm/compare/9a5cafca73a5...9e44d2d0ac1d",
     "created": false,
     "deleted": false,
     "forced": false,
@@ -194,16 +50,16 @@
         "username": "peeweep"
       },
       "committer": {
-        "email": "peeweep@0x0.ee",
-        "name": "peeweep",
-        "username": "peeweep"
+        "email": "noreply@github.com",
+        "name": "GitHub",
+        "username": "web-flow"
       },
       "distinct": true,
-      "id": "9a5cafca73a508110fe7ad24541050edfbc84be2",
-      "message": "fix typo",
-      "timestamp": "2022-02-09T17:31:09+08:00",
-      "tree_id": "c0a80280087938b53da25caebe27abe4c31f8b4c",
-      "url": "https://github.com/peeweep-test/supersm/commit/9a5cafca73a508110fe7ad24541050edfbc84be2"
+      "id": "9e44d2d0ac1d3b495aeb3332f5de5a3ad2fb58ff",
+      "message": "Show event (#18)\n\n* upload\r\n\r\n* comment install depends",
+      "timestamp": "2022-02-09T17:57:27+08:00",
+      "tree_id": "5fef4221d04568a21327463f5816ea7b1d76558c",
+      "url": "https://github.com/peeweep-test/supersm/commit/9e44d2d0ac1d3b495aeb3332f5de5a3ad2fb58ff"
     },
     "organization": {
       "avatar_url": "https://avatars.githubusercontent.com/u/97649938?v=4",
@@ -312,9 +168,9 @@
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/peeweep-test/supersm/pulls{/number}",
-      "pushed_at": 1644399069,
+      "pushed_at": 1644400647,
       "releases_url": "https://api.github.com/repos/peeweep-test/supersm/releases{/id}",
-      "size": 63,
+      "size": 73,
       "ssh_url": "git@github.com:peeweep-test/supersm.git",
       "stargazers": 0,
       "stargazers_count": 0,
@@ -362,10 +218,5 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workspace": "/home/runner/work/supersm/supersm",
-  "action": "__run_2",
-  "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
-  "action_repository": "",
-  "action_ref": "",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_b769358f-ca78-4ad6-a712-686d4c7dc7a5",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_b769358f-ca78-4ad6-a712-686d4c7dc7a5"
+  "action": "__run_2"
 }

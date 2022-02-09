@@ -1,7 +1,9 @@
 name: jenkine bridge
 on:
-#    pull_request_target:
-   pull_request:
+  pull_request_target:
+
+env:
+  BRIDGE_TOKEN: ${{ secrets.BridgeToken }}
 
 jobs:
   build:
@@ -23,22 +25,20 @@ jobs:
 
       - name: Trigger build
         id: generate-runid
-        env:
-          BRIDGE_TOKEN: ${{ secrets.BridgeToken }}
-          CHANGE_ID: ${{ github.event.pull_request.number }}
         run: |
           # put RUN_ID to output
           echo "::set-output name=RUN_ID::$(jenkins-bridge-client -token $BRIDGE_TOKEN -triggerBuild)"
 
+      - uses: webiny/action-post-run@2.0.1
+        id: post-run-command
+        with:
+          run: jenkins-bridge-client -token "$BRIDGE_TOKEN" -runid "${{ steps.generate-runid.outputs.RUN_ID }}" -cancelBuild
+
       - name: Print log
-        env:
-          BRIDGE_TOKEN: ${{ secrets.BridgeToken }}
         run: |
           jenkins-bridge-client -token "$BRIDGE_TOKEN" -runid "${{ steps.generate-runid.outputs.RUN_ID }}" -printlog
 
       - name: Download Artifacts
-        env:
-          BRIDGE_TOKEN: ${{ secrets.BridgeToken }}
         run: |
           jenkins-bridge-client -token "$BRIDGE_TOKEN" -runid "${{ steps.generate-runid.outputs.RUN_ID }}" -downloadArtifacts
           ls -lh ./artifacts
@@ -48,13 +48,3 @@ jobs:
           path: ./artifacts/*.deb
           single-archive: "false"
 
-  coding:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Print Environment
-        run: export
-
-      - name: Code Check
-        run: echo checking

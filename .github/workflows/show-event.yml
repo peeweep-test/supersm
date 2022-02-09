@@ -3,7 +3,6 @@ on:
   pull_request:
   push:
 
-
 jobs:
   log-github-event-goodies:
     name: "LOG Everything on GitHub Event"
@@ -11,5 +10,4 @@ jobs:
     steps:
       - name: Logging
         run: |
-          echo "${{toJSON(github.event)}}
-
+          echo "${{toJSON(github.event)}}"

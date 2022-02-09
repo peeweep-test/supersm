@@ -13,5 +13,6 @@ jobs:
           echo "${{toJSON(github.event)}}"
 
       - name: pr base sha
+        if: github.event_name == 'pull_request'
         run: |
           echo "${{toJSON(github.event.pull_request.base.sha)}}"

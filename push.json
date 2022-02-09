@@ -1,13 +1,13 @@
 {
-  "token": "***",
+  "token": "ghs_ddmXtrf8DIjbIgZ8SpWtcjRxws6z6W4DoLVG",
   "job": "log-github",
   "ref": "refs/heads/show-event",
-  "sha": "306aadeb58a4679454a922318da7e6556bebe3ce",
+  "sha": "9c07c8d7d73b829bced37f15e9ff45fe93d41f60",
   "repository": "peeweep-test/supersm",
   "repository_owner": "peeweep-test",
   "repositoryUrl": "git://github.com/peeweep-test/supersm.git",
-  "run_id": "1817189630",
-  "run_number": "10",
+  "run_id": "1817330254",
+  "run_number": "19",
   "retention_days": "90",
   "run_attempt": "1",
   "actor": "peeweep",
@@ -16,9 +16,9 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "306aadeb58a4679454a922318da7e6556bebe3ce",
+    "after": "9c07c8d7d73b829bced37f15e9ff45fe93d41f60",
     "base_ref": null,
-    "before": "934ab8e967a762ac4def9c2411630f45370acb28",
+    "before": "00a15ce94e379ea27121f321c6f3a19713e2cc35",
     "commits": [
       {
         "author": {
@@ -32,14 +32,14 @@
           "username": "peeweep"
         },
         "distinct": true,
-        "id": "306aadeb58a4679454a922318da7e6556bebe3ce",
-        "message": "update job name",
-        "timestamp": "2022-02-09T17:24:51+08:00",
-        "tree_id": "e3a5eaf9f011b2873f301efb0e0395f973070eb9",
-        "url": "https://github.com/peeweep-test/supersm/commit/306aadeb58a4679454a922318da7e6556bebe3ce"
+        "id": "9c07c8d7d73b829bced37f15e9ff45fe93d41f60",
+        "message": "comment install depends",
+        "timestamp": "2022-02-09T17:55:49+08:00",
+        "tree_id": "5fef4221d04568a21327463f5816ea7b1d76558c",
+        "url": "https://github.com/peeweep-test/supersm/commit/9c07c8d7d73b829bced37f15e9ff45fe93d41f60"
       }
     ],
-    "compare": "https://github.com/peeweep-test/supersm/compare/934ab8e967a7...306aadeb58a4",
+    "compare": "https://github.com/peeweep-test/supersm/compare/00a15ce94e37...9c07c8d7d73b",
     "created": false,
     "deleted": false,
     "forced": false,
@@ -55,11 +55,11 @@
         "username": "peeweep"
       },
       "distinct": true,
-      "id": "306aadeb58a4679454a922318da7e6556bebe3ce",
-      "message": "update job name",
-      "timestamp": "2022-02-09T17:24:51+08:00",
-      "tree_id": "e3a5eaf9f011b2873f301efb0e0395f973070eb9",
-      "url": "https://github.com/peeweep-test/supersm/commit/306aadeb58a4679454a922318da7e6556bebe3ce"
+      "id": "9c07c8d7d73b829bced37f15e9ff45fe93d41f60",
+      "message": "comment install depends",
+      "timestamp": "2022-02-09T17:55:49+08:00",
+      "tree_id": "5fef4221d04568a21327463f5816ea7b1d76558c",
+      "url": "https://github.com/peeweep-test/supersm/commit/9c07c8d7d73b829bced37f15e9ff45fe93d41f60"
     },
     "organization": {
       "avatar_url": "https://avatars.githubusercontent.com/u/97649938?v=4",
@@ -141,8 +141,8 @@
       "name": "supersm",
       "node_id": "R_kgDOGqwiZw",
       "notifications_url": "https://api.github.com/repos/peeweep-test/supersm/notifications{?since,all,participating}",
-      "open_issues": 1,
-      "open_issues_count": 1,
+      "open_issues": 0,
+      "open_issues_count": 0,
       "organization": "peeweep-test",
       "owner": {
         "avatar_url": "https://avatars.githubusercontent.com/u/97649938?v=4",
@@ -168,9 +168,9 @@
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/peeweep-test/supersm/pulls{/number}",
-      "pushed_at": 1644398696,
+      "pushed_at": 1644400554,
       "releases_url": "https://api.github.com/repos/peeweep-test/supersm/releases{/id}",
-      "size": 63,
+      "size": 73,
       "ssh_url": "git@github.com:peeweep-test/supersm.git",
       "stargazers": 0,
       "stargazers_count": 0,
@@ -218,10 +218,5 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workspace": "/home/runner/work/supersm/supersm",
-  "action": "__run_3",
-  "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
-  "action_repository": "",
-  "action_ref": "",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_aab6e979-c62c-4563-80dc-eed9f2501f7f",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_aab6e979-c62c-4563-80dc-eed9f2501f7f"
+  "action": "__run_2"
 }

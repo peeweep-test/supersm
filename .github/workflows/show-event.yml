@@ -9,11 +9,22 @@ jobs:
     steps:
       # - name: Install Depends
       #   run: sudo apt -y install curl
+      - name: printenv
+        run: printenv
 
       - name: base sha (pr)
         if: github.event_name == 'pull_request'
+        env:
+          PREV_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
-          echo "${{toJSON(github.event.pull_request.base.sha)}}"
+          echo "$PREV_SHA"
+
+      - name: base sha (squash merge)
+        if: github.event_name == 'push'
+        env:
+          PREV_SHA: ${{ github.event.before }}
+        run: |
+          echo "$PREV_SHA"
 
       - name: Dump GitHub context
         env:

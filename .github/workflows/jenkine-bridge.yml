@@ -3,6 +3,7 @@ on:
 #   pull_request_target:
   pull_request:
 
+
 env:
   BRIDGE_TOKEN: ${{ secrets.BridgeToken }}
 
@@ -26,6 +27,8 @@ jobs:
 
       - name: Trigger build
         id: generate-runid
+        env:
+          CHANGE_ID: ${{ github.event.pull_request.number }}
         run: |
           echo "::set-output name=RUN_ID::$(jenkins-bridge-client -token $BRIDGE_TOKEN -triggerBuild)"
 

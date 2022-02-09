@@ -3,7 +3,7 @@ on:
   pull_request_target:
 
 env:
-  PR_NUM: ${{ github.event.pull_request.number }}
+  CHANGE_ID: ${{ github.event.pull_request.number }}
 
 jobs:
   build:

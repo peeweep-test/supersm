@@ -8,15 +8,11 @@ jobs:
     # name: "LOG Everything on GitHub Event"
     runs-on: ubuntu-latest
     steps:
-      - name: Logging github.event
-        run: |
-          echo "${{toJSON(github.event)}}"
-
-      - name: pr base sha
+        - name: pr base sha
         if: github.event_name == 'pull_request'
         run: |
           echo "${{toJSON(github.event.pull_request.base.sha)}}"
 
-      - name: Logging github
+      - name: Show github json
         run: |
           echo "${{toJSON(github)}}"

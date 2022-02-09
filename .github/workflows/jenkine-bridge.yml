@@ -1,6 +1,10 @@
 name: jenkine bridge
 on:
   pull_request_target:
+
+env:
+  PR_NUM: ${{ github.event.pull_request.number }}
+
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -1,7 +1,7 @@
 name: Event Loggger
 on:
-  pull_request_review:
-    types: [submitted]
+  pull_request:
+    types: [closed]
   push:
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
           echo "$PREV_SHA"
 
       - name: base sha (merge)
-        if: github.event_name == 'pull_request_review' && github.event.action == 'submitted' && github.event.review.state == 'approved'
+        if: github.event.pull_request.merged == true
         env:
           PREV_SHA: ${{ github.event.before }}
         run: |

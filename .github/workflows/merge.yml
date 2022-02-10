@@ -1,0 +1,23 @@
+# https://fars.ee/W1Ba
+name: Merge template
+on:
+  pull_request:
+    types:
+      # pr merged
+      - closed
+
+jobs:
+  dump-job:
+    uses: peeweep/workflow-templates/.github/workflows/dump-context.yml@master
+
+  push-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printenv
+        run: printenv
+
+      - name: Show something in pr merged
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+        run: |
+          echo run in pull_request merged
+

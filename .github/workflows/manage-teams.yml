@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: printenv
+      - run: printenv
 
       - uses: actions/github-script@v5
         with:
@@ -19,5 +20,5 @@ jobs:
           github-token: ${{ secrets.TEAMS_MANAGER }}
           script: |
             const teamsList = github.rest.teams.list({
-              org: context.payload.repository.organization,
+              org: "peeweep-test",
             })

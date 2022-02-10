@@ -19,8 +19,8 @@ jobs:
         run: |
           echo "$PREV_SHA"
 
-      - name: base sha (squash merge)
-        if: github.event_name == 'push'
+      - name: base sha (merge)
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
         env:
           PREV_SHA: ${{ github.event.before }}
         run: |

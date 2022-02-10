@@ -7,8 +7,6 @@ jobs:
   log-github:
     runs-on: ubuntu-latest
     steps:
-      # - name: Install Depends
-      #   run: sudo apt -y install curl
       - name: printenv
         run: printenv
 

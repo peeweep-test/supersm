@@ -1,0 +1,21 @@
+name: Teams manage template
+on:
+  pull_request_target:
+
+jobs:
+  push-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: printenv
+      - uses: actions/github-script@v5
+        with:
+           script: |
+             console.log(context)
+
+      - name: scripts
+        uses: actions/github-script@v5
+        with:
+          script: |
+            const teamsList = github.rest.teams.list({
+              org: context.payload.repository.organization,
+            })

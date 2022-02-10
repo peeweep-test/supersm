@@ -19,7 +19,7 @@ jobs:
           echo "$PREV_SHA"
 
       - name: base sha (merge)
-        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+        if: github.event_name == 'pull_request_review' && github.event.action == 'submitted' && github.event.review.state == 'approved'
         env:
           PREV_SHA: ${{ github.event.before }}
         run: |

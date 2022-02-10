@@ -1,7 +1,15 @@
-name: Event Loggger
+name: Dump context
 on:
   pull_request:
-    types: [closed]
+    types:
+      # default
+      - opened
+      - synchronize
+      - reopened
+      # pr merged
+      - closed
+      # pr updated
+      - edited
   push:
 
 jobs:
@@ -13,16 +21,16 @@ jobs:
         run: printenv
 
       - name: base sha (pr)
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request' && github.event.pull_request.merge == false
         env:
           PREV_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           echo "$PREV_SHA"
 
       - name: base sha (merge)
-        if: github.event.pull_request.merged == true
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
         env:
-          PREV_SHA: ${{ github.event.before }}
+          PREV_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           echo "$PREV_SHA"
 

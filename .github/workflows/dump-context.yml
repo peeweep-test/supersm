@@ -20,19 +20,20 @@ jobs:
       - name: printenv
         run: printenv
 
-      - name: base sha (pr)
+      - name: Show something in pr
         if: github.event_name == 'pull_request' && github.event.pull_request.merge == false
-        env:
-          PREV_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
-          echo "$PREV_SHA"
+          echo run in pull_request
 
-      - name: base sha (merge)
+      - name: Show something in pr merged
         if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
-        env:
-          PREV_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
-          echo "$PREV_SHA"
+          echo run in pull_request merged
+
+      - name: Show something in push
+        if: github.event_name == 'push'
+        run: |
+          echo run in push
 
       - name: Dump GitHub context
         env:

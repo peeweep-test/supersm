@@ -8,8 +8,6 @@ on:
       - reopened
       # pr merged
       - closed
-      # pr updated
-      - edited
   push:
 
 jobs:

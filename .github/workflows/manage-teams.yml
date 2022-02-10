@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: printenv
-      - run: printenv
 
       - uses: actions/github-script@v5
         with:

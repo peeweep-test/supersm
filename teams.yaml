@@ -1,0 +1,9 @@
+teams:
+  admin:
+    members:
+      - peeweep
+    repos:
+      - all # 留空为与team 同名的仓库
+  dtkcore:
+    members:
+      - peeweep

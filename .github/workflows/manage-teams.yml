@@ -16,13 +16,13 @@ jobs:
           npm install js-yaml --local
 
       - name: dump context
-        uses: actions/github-script@v5
+        uses: actions/github-script@v6
         with:
           script: |
             console.log(context)
 
       - name: load scripts
-        uses: actions/github-script@v5
+        uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.TEAMS_MANAGER }}
           debug: true

@@ -30,6 +30,7 @@ async function getTeams(github, context) {
 }
 
 function updateTeamRepo(teams) {
+  console.log("updateTeamRepo");
   for (let team in teams) {
     if (teams[team].repos == null) {
       // repos 留空为与team 同名的仓库
@@ -41,6 +42,7 @@ function updateTeamRepo(teams) {
 }
 
 async function parseYaml() {
+  console.log("parseYaml");
   const yaml = require("js-yaml");
   const fs = require("fs");
 
@@ -57,11 +59,27 @@ async function parseYaml() {
     console.log(e);
   }
 }
+
+async function getRepoNames(github, context) {
+  console.log("getRepoNames");
+  const reposListForOrg = await github.rest.repos.listForOrg({
+    org: context.repo.owner,
+  });
+  let repoNames = [];
+  for (let repo of reposListForOrg.data) {
+    repoNames.push(repo.name);
+  }
+  console.log(repoNames);
+  return repoNames;
+}
+
 module.exports = async ({ github, context }) => {
   // parse yaml
   await parseYaml();
 
-  //// return teams name
+  // get teams names
   teams = await getTeams(github, context);
-  return teams;
+
+  // get repo list
+  repoName = await getRepoNames(github, context);
 };

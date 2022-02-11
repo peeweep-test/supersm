@@ -2,8 +2,8 @@ teams:
   admin:
     members:
       - peeweep
-    repos:
-      - all # 留空为与team 同名的仓库
+    repos: # 默认为 team 同名的仓库
+      - all
   dtkcore:
     members:
       - peeweep

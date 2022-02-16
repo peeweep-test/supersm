@@ -1,0 +1,7 @@
+name: Lint Commit Messages
+on:
+  pull_request:
+
+jobs:
+  check_job:
+    uses: peeweep-test/supersm/.github/workflows/commitlint.yml@test-commitlint

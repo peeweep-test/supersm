@@ -16,9 +16,12 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
+      - name: install cppcheck
+        run: sudo apt -y install cppcheck
       - uses: peeweep/action-cppcheck@install_cppcheck
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
           pull_request_id: ${{ github.event.pull_request.number }}
           allow_approve: false
+          install_cppcheck: false

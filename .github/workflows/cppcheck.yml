@@ -22,4 +22,3 @@ jobs:
           repository: ${{ github.repository }}
           pull_request_id: ${{ github.event.pull_request.number }}
           allow_approve: false
-          install_cppcheck: false

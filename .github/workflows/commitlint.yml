@@ -15,6 +15,6 @@ jobs:
           wget https://raw.githubusercontent.com/peeweep-test/supersm/test-commitlint/commitlint.config.js \
             -O ./commitlint.config.js
 
-      - uses: wagoid/commitlint-github-action@v4
+      - uses: wagoid/commitlint-github-action@v5
         with:
           configFile: "./commitlint.config.js"
